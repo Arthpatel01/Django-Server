@@ -143,6 +143,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'AppUser.User'
 CSRF_COOKIE_SECURE = False
+CSRF_TRUSTED_ORIGINS = ['https://django-server-production-a83f.up.railway.app', 'https://django-server-production-a83f.up.railway.app/admin/login/?next=/admin', 'https://django-server-production-a83f.up.railway.app/admin/login']
 
 
 
