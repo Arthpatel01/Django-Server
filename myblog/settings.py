@@ -24,6 +24,7 @@ SECRET_KEY = 'django-insecure-&ozxekybis&y4u5c$(h*0$)(lw9gt40rmh9^n&!ss4s8y=g#0c
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+DEBUG404 = True
 
 ALLOWED_HOSTS = ["*", r'WWW.django-server-production-a83f.up.railway.app', r'django-server-production-a83f.up.railway.app', r'django-server-production-a83f', r'https://django-server-production-a83f.up.railway.app/']
 
@@ -143,37 +144,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'AppUser.User'
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
-            'datefmt' : "%d/%b/%Y %H:%M:%S"
-        },
-        'simple': {
-            'format': '%(levelname)s %(message)s'
-        },
-    },
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'mysite.log',
-            'formatter': 'verbose'
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers':['file'],
-            'propagate': True,
-            'level':'DEBUG',
-        },
-        'MYAPP': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-        },
-    }
-}
+
 
 
