@@ -16,7 +16,7 @@ https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
 # application = get_wsgi_application()
 from django.core.wsgi import get_wsgi_application
 from whitenoise import WhiteNoise
-from myapp import settings  # Replace 'myapp' with the name of your Django application
+from myblog import settings  # Replace 'myapp' with the name of your Django application
 
 application = get_wsgi_application()
 application = WhiteNoise(application)
