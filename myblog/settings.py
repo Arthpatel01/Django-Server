@@ -142,4 +142,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'AppUser.User'
 
 if not DEBUG:
-    CSRF_TRUSTED_ORIGINS = [‘https://django-server-production-a83f.up.railway.app’]
+    CSRF_TRUSTED_ORIGINS = ['https://django-server-production-a83f.up.railway.app']
