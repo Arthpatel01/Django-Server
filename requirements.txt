@@ -8,4 +8,4 @@ pycparser==2.21
 psycopg2
 sqlparse==0.4.3
 tzdata==2023.3
-
+whitenoise
